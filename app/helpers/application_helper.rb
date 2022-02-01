@@ -4,9 +4,9 @@ module ApplicationHelper
       "mw-md"
     # Devise 導入後にコメントアウトを解除
     # elsif devise_controller?
-      "mw-sm"
+    #  "mw-sm"
     else
       "mw-xl"
     end
-  end 
+  end
 end

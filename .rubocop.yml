@@ -57,3 +57,4 @@ Rails/FilePath:
 Rails/OutputSafety:
   Exclude:
     - 'app/helpers/markdown_helper.rb'
+

@@ -58,3 +58,7 @@ Rails/OutputSafety:
   Exclude:
     - 'app/helpers/markdown_helper.rb'
 
+Rails/ReversibleMigration:
+  Exclude:
+    - 'db/migrate/20220203115344_change_clumns_notnull_add_movies.rb'
+

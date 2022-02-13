@@ -2,7 +2,8 @@
  *= require_tree .
  *= require_self
  */
- .base-container {
+
+.base-container {
   margin: 0 auto;
   padding: 1rem;
 }
@@ -22,3 +23,6 @@
 .mw-xl {
   max-width: 1200px;
 }
+
+ @import "bootstrap/scss/bootstrap";
+

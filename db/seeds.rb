@@ -9,11 +9,11 @@
   ActiveRecord::Base.connection.execute("TRUNCATE TABLE #{table_name} RESTART IDENTITY CASCADE")
 end
 
-#require "csv"
+# require "csv"
 
-#CSV.foreach(db/csv_data/text_data.csv) do |row|
+# CSV.foreach(db/csv_data/text_data.csv) do |row|
 # p row
-#end
+# end
 
 email = "test@example.com"
 password = "password"

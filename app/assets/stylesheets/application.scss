@@ -4,10 +4,12 @@
  */
 
 .base-container {
-  @extend .container-fluid;
   margin: 0 auto;
   padding: 1rem;
-  width: 80%;
+}
+
+.mw-sm {
+  max-width: 576px;
 }
 
 .mw-md {

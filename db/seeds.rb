@@ -11,9 +11,8 @@
 end
 
 require "import_csv"
-  ImportCsv.text_data
-  ImportCsv.movie_data
-
+ImportCsv.text_data
+ImportCsv.movie_data
 
 email = "test@example.com"
 password = "password"

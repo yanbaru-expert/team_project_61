@@ -11,13 +11,13 @@ class ImportCsv
   end
 
   def self.text_data
-    list = import('db/csv_data/text_data.csv')
+    list = import("db/csv_data/text_data.csv")
     Text.create!(list)
     puts "text_dataインポート完了!"
   end
 
   def self.movie_data
-    list = import('db/csv_data/movie_data.csv')
+    list = import("db/csv_data/movie_data.csv")
     Movie.create!(list)
     puts "movie_dataインポート完了!"
   end

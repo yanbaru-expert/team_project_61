@@ -14,3 +14,5 @@ class Text < ApplicationRecord
     php: 5
   }
 end
+
+RAILS_GENRE_LIST = %w[basic git ruby rails]

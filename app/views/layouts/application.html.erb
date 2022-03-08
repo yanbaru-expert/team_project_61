@@ -11,13 +11,17 @@
   </head>
   <body>
     <header>
-    
+      <%= render "layouts/header" %>
     </header>
     <main>
       <%= render "layouts/flash" %>
       <div class="base-container <%= max_width %>">
         <%= yield %>
-        <%= render "layouts/movie" %>
+        <%
+=begin%>
+ <%= render "layouts/movie" %> 
+<%
+=end%>
       </div>
     </main>
     <footer>

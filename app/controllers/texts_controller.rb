@@ -1,5 +1,5 @@
 class TextsController < ApplicationController
-  def index; 
+  def index
     @texts = Text.where(genre: RAILS_GENRE_LIST)
   end
 

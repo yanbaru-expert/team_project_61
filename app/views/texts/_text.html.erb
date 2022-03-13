@@ -1,8 +1,12 @@
-<div class="card border-dark mb-3">
-  <%= image_tag("no_image.jpg") %>
-  <div class="card-body">
-    <a href="#" class="btn btn-secondary btn-brock">読破済みにする</a>
-    <p class="card-text"><%= text.title %></p>
-    【<%= text.genre %>】
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card content-card border-dark mb-3">
+      <%= image_tag("no_image.jpg") %>
+      <div class="card-body">
+        <a href="#" class="btn btn-secondary btn-block">読破済みにする</a>
+        <p class="card-text"><%= text.title %></p>
+        【<%= text.genre_i18n %>】
+      </div>
+    </div>
   </div>
 </div>

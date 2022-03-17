@@ -1,7 +1,7 @@
-<div class="col">
-  <div class="card" style="width: 23rem;">
+<div class="col-12 col-md-6 col-lg-4">
+  <div class= "card">
     <div class="embed-responsive embed-responsive-21by9">
-     <iframe class="embed-responsive-item" src= <%= (movie.url) %> frameborder="0" style="border:0" allowfullscreen></iframe>
+      <%= embed_youtube(movie.url) %>
     </div>
     <div style="text-align: center">
       <a href="#" class="btn btn-primary">読破済みにする</a>
@@ -10,3 +10,4 @@
     <p class="card-title"><%= "Lv.#{movie_counter +1 } :" %><%= movie.title %></p>
   </div>
 </div>
+  

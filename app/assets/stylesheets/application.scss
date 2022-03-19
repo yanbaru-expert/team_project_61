@@ -37,3 +37,7 @@
 .alert-alert {
   @extend .alert-danger;
 }
+
+a:hover {
+  text-decoration: none;
+}

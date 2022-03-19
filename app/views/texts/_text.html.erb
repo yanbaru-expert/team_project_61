@@ -1,4 +1,5 @@
 <div class="col-12 col-md-6 col-lg-4">
+  <%= link_to text_path(text) do %>
   <div class="card content-card border-dark mb-3">
     <%= image_tag("no_image.jpg") %>
     <div class="card-body">
@@ -7,4 +8,5 @@
       【<%= text.genre_i18n %>】
     </div>
   </div>
+  <% end %>
 </div>

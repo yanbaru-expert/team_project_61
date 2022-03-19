@@ -1,10 +1,10 @@
 <div class="col-12 col-md-6 col-lg-4">
-  <div class= "card">
+  <div class= "card mb-3">
     <div class="embed-responsive embed-responsive-21by9">
       <%= embed_youtube(movie.url) %>
     </div>
-    <div style="text-align: center">
-      <a href="#" class="btn btn-primary">読破済みにする</a>
+    <div class="card-body">
+      <a href="#" class="btn btn-secondary btn-block">視聴済みにする</a>
       <br>
     </div>
     <p class="card-title"><%= "Lv.#{movie_counter +1 } :" %><%= movie.title %></p>

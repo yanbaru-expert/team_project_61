@@ -1,5 +1,5 @@
 ActiveAdmin.register Movie do
-  permit_params :genre, :title, :content
+  permit_params :genre, :title, :url
 
   index do
     selectable_column
@@ -25,14 +25,14 @@ ActiveAdmin.register Movie do
     f.inputs do
       input :genre, as: :select, collection: Movie.genres_i18n.invert
       input :title
-      input :content
+      input :url
     end
     f.actions
   end
 
   filter :genre, as: :select, collection: Movie.genres_i18n.invert.transform_values { |v| Movie.genres[v] }
   filter :title
-  filter :content
+  filter :url
   filter :created_at
   filter :updated_at
 end

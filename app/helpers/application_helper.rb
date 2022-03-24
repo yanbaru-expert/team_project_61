@@ -9,12 +9,4 @@ module ApplicationHelper
       "mw-xl"
     end
   end
-
-  def full_title
-    if params[:genre] == "php"
-      
-    else
-      "#{page_title} - #{BASE_TITLE}"
-    end
-  end
 end

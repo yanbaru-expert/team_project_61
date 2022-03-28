@@ -17,6 +17,7 @@
       <%= render "layouts/flash" %>
       <div class="base-container <%= max_width %>">
         <%= yield %>
+        <title><%= full_title(yield(:title)) %></title>
       </div>
     </main>
     <footer>

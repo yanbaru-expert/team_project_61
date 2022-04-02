@@ -10,12 +10,11 @@ module ApplicationHelper
     end
   end
 
-
-  def full_title(base_title = "")
+  def full_title
     base_title = "PHP 動画"
     if params[:genre] == "php"
       base_title
-   else
+    else
       "Ruby/Rails　動画"
     end
   end

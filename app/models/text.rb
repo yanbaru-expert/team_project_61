@@ -1,5 +1,6 @@
 class Text < ApplicationRecord
   has_many :read_progresses, dependent: :destroy
+  
   def read_progressed_by?(user)
     read_progresses.any? { |read_progress| read_progress.user_id == user.id }
   end
@@ -18,6 +19,16 @@ class Text < ApplicationRecord
     rails: 4,
     php: 5
   }
-end
 
-RAILS_GENRE_LIST = %w[basic git ruby rails].freeze
+  RAILS_GENRE_LIST = %w[basic git ruby rails].freeze
+  PHP_GENRE_LIST = %w[php].freeze
+
+  def self.genre_list(genre)
+    if genre == "php"
+      Text.where(genre: Text::PHP_GENRE_LIST)
+    else
+      Text.where(genre: Text::RAILS_GENRE_LIST)
+    end
+  end
+
+end

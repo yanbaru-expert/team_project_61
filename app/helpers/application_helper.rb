@@ -26,5 +26,4 @@ module ApplicationHelper
       "Ruby/Rails テキスト教材"
     end
   end
-
 end

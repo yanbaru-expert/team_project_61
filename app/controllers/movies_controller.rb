@@ -6,6 +6,6 @@ class MoviesController < ApplicationController
               else
                 Movie.where(genre: RAILS_GENRE_LIST)
               end
-              @movies = Movie.page(params[:page]).per(PER_PAGE)
+    @movies = @movies.page(params[:page]).per(PER_PAGE)
   end
 end
